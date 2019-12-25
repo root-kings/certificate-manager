@@ -1,0 +1,32 @@
+{
+	"name": "starter-template",
+	"version": "1.0.0",
+	"description": "a website starter template",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"dev": "concurrently --kill-others \"gulp dev\" \"nodemon -r dotenv/config server.js\""
+	},
+	"author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"moment": "^2.24.0",
+		"mongoose": "^5.4.16",
+		"morgan": "^1.9.1",
+		"pug": "^2.0.3"
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"del": "^3.0.0",
+		"dotenv": "^6.2.0",
+		"gulp": "^4.0.0",
+		"gulp-csso": "^3.0.1",
+		"gulp-pug": "^4.0.1",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.0.2"
+	}
+}
