@@ -26,7 +26,7 @@ server.use(
 server.use(bodyParser.json())
 
 server.use(express.static('public'))
-server.use(express.static('build'))
+server.use(express.static('./'))
 
 server.set('view engine', 'pug')
 server.set('views', './views')
