@@ -3,7 +3,7 @@
     nav.transparent.z-depth-0
       .nav-wrapper
         .container
-          a.brand-logo.blue-text(href="") Certificate Manager
+          a.brand-logo.blue-text(href="/") Certificate Manager
           ul#nav-mobile.right.hide-on-med-and-down
             li
               a.blue-text(href="sass.html") Sass

@@ -40,7 +40,7 @@
                   img(src="../assets/images/office.jpg")
                   span.card-title Template
 
-          .row
+          //- .row
             .col.s6.file-field.input-field
               .btn.blue
                 span File

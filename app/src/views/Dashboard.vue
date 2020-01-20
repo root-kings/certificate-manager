@@ -3,16 +3,16 @@
     Navbar
     section.section
       .container
-        .btn.blue New Cert
+        router-link.btn.blue(to="/dashboard/new") New Cert
 
     section.section
         .container
             .collection
-                a.collection-item cert 1
+                router-link.collection-item(to="/dashboard/cert") cert 1
                     
-                a.collection-item cert 2
+                router-link.collection-item(to="/dashboard/cert") cert 2
 
-                a.collection-item cert 3
+                router-link.collection-item(to="/dashboard/cert") cert 3
       
   
 </template>

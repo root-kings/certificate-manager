@@ -7,7 +7,7 @@
           .parallax
             img(src="../assets/images/office.jpg")
           .container.center
-            .btn-large.center Get It
+            router-link.btn-large.center.blue(to="/dashboard") Get It
       
   
 </template>
