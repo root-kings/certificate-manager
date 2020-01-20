@@ -26,6 +26,12 @@ const routes = [
       import( "../views/New.vue")
   },
   {
+    path: "/dashboard/:certId",
+    name: "manage",
+    component: () =>
+      import( "../views/Manage.vue")
+  },
+  {
     path: "/dashboard",
     name: "dashboard",
     component: () =>
