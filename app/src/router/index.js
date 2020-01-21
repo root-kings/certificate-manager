@@ -25,7 +25,7 @@ const routes = [
   },
   {
     path: '/login',
-    name: 'new',
+    name: 'login',
     component: () => import('@/views/Login.vue')
   },
   {
@@ -37,6 +37,11 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: () => import('@/views/Dashboard.vue')
+  },
+  {
+    path: '/:id',
+    name: 'cert-view',
+    component: () => import('@/views/View.vue')
   }
 ]
 
