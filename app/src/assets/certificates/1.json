@@ -1,0 +1,84 @@
+{
+  "title": "Participation 01",
+  "type": "participation",
+  "event": {
+    "position": {
+      "x": 10,
+      "y": 10
+    },
+    "font": {
+      "size": 14,
+      "color": "red",
+      "family": "roboto"
+    }
+  },
+  "date": {
+    "position": {
+      "x": 10,
+      "y": 10
+    },
+    "font": {
+      "size": 14,
+      "color": "red",
+      "family": "roboto"
+    }
+  },
+  "awardee": {
+    "position": {
+      "x": 10,
+      "y": 10
+    },
+    "font": {
+      "size": 14,
+      "color": "red",
+      "family": "roboto"
+    }
+  },
+  "organizer": {
+    "position": {
+      "x": 10,
+      "y": 10
+    },
+    "font": {
+      "size": 14,
+      "color": "red",
+      "family": "roboto"
+    }
+  },
+  "logos": [
+    {
+      "position": {
+        "x": 10,
+        "y": 10,
+        "w": 10,
+        "h": 10
+      }
+    }
+  ],
+  "dignitories": [
+    {
+      "name": {
+        "position": {
+          "x": 10,
+          "y": 10
+        },
+        "font": {
+          "size": 14,
+          "color": "red",
+          "family": "roboto"
+        }
+      },
+      "position": {
+        "position": {
+          "x": 10,
+          "y": 10
+        },
+        "font": {
+          "size": 14,
+          "color": "red",
+          "family": "roboto"
+        }
+      }
+    }
+  ]
+}
