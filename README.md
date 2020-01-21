@@ -1,4 +1,5 @@
 # certificate-manager
+
 A system to generate and validate event certificates.
 
 - upload CSV
@@ -20,5 +21,7 @@ A system to generate and validate event certificates.
 
 - node
 - express
-- 
 
+## TODO
+
+- make sure certificates are rendered on the backend and frontend only shows the image of the cert
