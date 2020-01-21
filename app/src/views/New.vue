@@ -8,14 +8,20 @@
       section.section
         .container
           .card-panel
-            h4.light Create new certificate
+            .row
+              .col.s12
+                h4 Create new certificate
             .row
               .col.s12.input-field
-                input#eventName(type="text" name="eventName")
+                input#eventName(type="text" name="eventName" :value="certificate.event.name")
                 label(for="eventName") Event Name
 
+              .col.s12.input-field
+                input#eventOrganizer(type="text" name="eventOrganizer" :value="certificate.event.organizer")
+                label(for="eventOrganizer") Event Organizer
+
               .col.s6.input-field
-                input#eventDate(type="text" class="datepicker" name="eventDate")
+                input#eventDate(type="text" class="datepicker" name="eventDate" :value="certificate.event.date")
                 label(for="eventDate") Event Date
 
             .row
@@ -40,14 +46,28 @@
                     img(src="../assets/images/office.jpg")
                     span.card-title Template
 
-            //- .row
-              .col.s6.file-field.input-field
-                .btn.deep-purple.darken-3
-                  span File
-                  input(type="file")
-                .file-path-wrapper
-                  input.file-path.validate(type="text")
+            .row
+              h4.light.col.s12 Template Options
+              
+              h5.light.col.s12 Logo
+              .col.s12
+                .card-panel
+                  p logo upload
+              
+              
+              h5.light.col.s12 Dignitories
 
+              .input-field.col.s6
+                input#digName(type="text")
+                label(for="digName") Name
+              .input-field.col.s6
+                input#digpos(type="text")
+                label(for="digpos") Position
+
+              .col.s12
+                .btn.deep-purple-text.btn-flat.waves-effect.waves-purple Add Dignitory
+
+            
 
             .row 
               .col.s12
@@ -65,6 +85,17 @@ export default {
   name: 'home',
   components: {
     Layout
+  },
+  data() {
+    return {
+      certificate: {
+        event: {
+          name: '',
+          organizer: '',
+          dat: ''
+        }
+      }
+    }
   }
 }
 </script>
