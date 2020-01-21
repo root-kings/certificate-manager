@@ -1,29 +1,24 @@
 <template lang="pug">
-  .home
-    Navbar
-    section.section
-      .container
-        .parallax-container.valign-wrapper
-          .parallax
-            img(src="../assets/images/office.jpg")
-          .container.center
-            router-link.btn-large.center.blue(to="/dashboard") Get It
+  Layout
+    .home
+      section.section
+        .container
+          .parallax-container.valign-wrapper
+            .parallax
+              img(src="../assets/images/office.jpg")
+            .container.center
+              router-link.btn-large.center.deep-purple.darken-3(to="/dashboard") Get It
       
   
 </template>
 
 <script>
-// @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import M from 'materialize-css'
+import Layout from '@/components/Layout.vue'
 
 export default {
   name: 'home',
   components: {
-    Navbar
-  },
-  mounted() {
-    M.AutoInit()
+    Layout
   }
 }
 </script>

@@ -1,37 +1,32 @@
 <template lang="pug">
-  .home
-    Navbar
-    section.section
-      .container
-        
-        h4.light Cert Title
-        router-link.btn.blue(to="/dashboard/new") Edit Cert
+  Layout
+    .manage
+      section.section
+        .container
+          
+          h4.light Cert Title
+          router-link.btn.deep-purple.darken-3(to="/dashboard/new") Edit Cert
 
-    section.section
-      .container
-        h4.light Participants
-        .collection
-          a.collection-item cert 1
-              
-          a.collection-item cert 2
+      section.section
+        .container
+          h4.light Participants
+          .collection
+            a.collection-item person 1
+                
+            a.collection-item person 2
 
-          a.collection-item cert 3
+            a.collection-item person 3
   
 
 </template>
 
 <script>
-// @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import M from 'materialize-css'
+import Layout from '@/components/Layout.vue'
 
 export default {
   name: 'home',
   components: {
-    Navbar
-  },
-  mounted() {
-    M.AutoInit()
+    Layout
   }
 }
 </script>

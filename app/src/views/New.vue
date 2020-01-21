@@ -1,74 +1,70 @@
 <template lang="pug">
-  .home
-    Navbar
-    section.section
-      .container
-        .btn.blue Back
+  Layout
+    .new
+      section.section
+        .container
+          .btn.deep-purple.darken-3 Back
 
-    section.section
-      .container
-        .card-panel
-          h4.light Create new certificate
-          .row
-            .col.s12.input-field
-              input#eventName(type="text" name="eventName")
-              label(for="eventName") Event Name
+      section.section
+        .container
+          .card-panel
+            h4.light Create new certificate
+            .row
+              .col.s12.input-field
+                input#eventName(type="text" name="eventName")
+                label(for="eventName") Event Name
 
-            .col.s6.input-field
-              input#eventDate(type="text" class="datepicker" name="eventDate")
-              label(for="eventDate") Event Date
+              .col.s6.input-field
+                input#eventDate(type="text" class="datepicker" name="eventDate")
+                label(for="eventDate") Event Date
 
-          .row
-            .col.s3
-              .card
-                .card-image
-                  img(src="../assets/images/office.jpg")
-                  span.card-title Template
-            .col.s3
-              .card.active
-                .card-image
-                  img(src="../assets/images/office.jpg")
-                  span.card-title Template
-            .col.s3
-              .card
-                .card-image
-                  img(src="../assets/images/office.jpg")
-                  span.card-title Template
-            .col.s3
-              .card
-                .card-image
-                  img(src="../assets/images/office.jpg")
-                  span.card-title Template
+            .row
+              .col.s3
+                .card
+                  .card-image
+                    img(src="../assets/images/office.jpg")
+                    span.card-title Template
+              .col.s3
+                .card.active
+                  .card-image
+                    img(src="../assets/images/office.jpg")
+                    span.card-title Template
+              .col.s3
+                .card
+                  .card-image
+                    img(src="../assets/images/office.jpg")
+                    span.card-title Template
+              .col.s3
+                .card
+                  .card-image
+                    img(src="../assets/images/office.jpg")
+                    span.card-title Template
 
-          //- .row
-            .col.s6.file-field.input-field
-              .btn.blue
-                span File
-                input(type="file")
-              .file-path-wrapper
-                input.file-path.validate(type="text")
+            //- .row
+              .col.s6.file-field.input-field
+                .btn.deep-purple.darken-3
+                  span File
+                  input(type="file")
+                .file-path-wrapper
+                  input.file-path.validate(type="text")
 
 
-          .row 
-            .col.s12
-              .btn.blue Create
+            .row 
+              .col.s12
+                .btn.deep-purple.darken-3 Create
 
-        
-  
+          
+    
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import M from 'materialize-css'
+import Layout from '@/components/Layout.vue'
 
 export default {
   name: 'home',
   components: {
-    Navbar
-  },
-  mounted() {
-    M.AutoInit()
+    Layout
   }
 }
 </script>
