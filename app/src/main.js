@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 
 import 'materialize-css'
-import 'materialize-css/dist/css/materialize.css'
+import 'materialize-css/sass/materialize.scss'
 import './assets/css/lib/dayshmookh.layout.css'
 
 Vue.config.productionTip = false
