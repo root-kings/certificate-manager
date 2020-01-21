@@ -2,7 +2,10 @@
   footer.page-footer.white
     .divider
     .container
-      .row
+      .center
+        p.deep-purple-text.text-darken-1 #[span.light Powered by] #[a.deep-purple-text.text-darken-4(href="https://root-kings.github.io") Root Kings.]
+
+      //- .row
         .col.l6.s12
           h5.deep-purple-text.text-darken-1 Footer Content
           p.deep-purple-text
@@ -18,7 +21,7 @@
               a.deep-purple-text(href="#!") Link 3
             li
               a.deep-purple-text(href="#!") Link 4
-    .footer-copyright
+    //- .footer-copyright
       .container.deep-purple-text
         | © 2014 Copyright Text
         a.deep-purple-text.right(href="#!") More Links
