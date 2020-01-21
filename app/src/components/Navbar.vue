@@ -1,24 +1,24 @@
 <template lang="pug">
   .navbar-fixed
-    nav.transparent.z-depth-0
+    nav.white.z-depth-0
       .nav-wrapper
         .container
-          a.brand-logo.blue-text(href="/") Certificate Manager
+          router-link.brand-logo.deep-purple-text.text-darken-3(to="/") Certificate Manager
           ul#nav-mobile.right.hide-on-med-and-down
             li
-              a.blue-text(href="sass.html") Sass
+              router-link.deep-purple-text.text-darken-3(to="/dashboard") Dashboard
             li
-              a.blue-text(href="badges.html") Components
+              router-link.deep-purple-text.text-darken-3(to="/about") About
             li
-              a.blue-text(href="collapsible.html") JavaScript
+              router-link.deep-purple-text.text-darken-3(to="login") Login
 
 
 </template>
 
 <script>
 export default {
-  name: "Navbar"
-};
+  name: 'Navbar'
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
