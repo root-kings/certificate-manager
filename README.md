@@ -11,7 +11,7 @@ A system to generate and validate event certificates.
 - certificate validation public links
 - validation server generation
 - we will provide hosting
-- certificate url can be: https://certiman.com/{org}/{event}/{id}?auth={key}
+- certificate url can be: `https://certiman.com/{org}/{event}/{id}?auth={key}`
 
 ## #hype
 
