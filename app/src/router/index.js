@@ -19,19 +19,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
   },
   {
-    path: '/dashboard/new',
-    name: 'new',
-    component: () => import('@/views/New.vue')
-  },
-  {
     path: '/login',
     name: 'login',
     component: () => import('@/views/Login.vue')
   },
   {
-    path: '/dashboard/:certId',
-    name: 'manage',
-    component: () => import('@/views/Manage.vue')
+    path: '/certificate/:id',
+    name: 'cert-view',
+    component: () => import('@/views/View.vue')
   },
   {
     path: '/dashboard',
@@ -39,9 +34,14 @@ const routes = [
     component: () => import('@/views/Dashboard.vue')
   },
   {
-    path: '/:id',
-    name: 'cert-view',
-    component: () => import('@/views/View.vue')
+    path: '/dashboard/certificate/new',
+    name: 'cert-new',
+    component: () => import('@/views/New.vue')
+  },
+  {
+    path: '/dashboard/certificate/:id',
+    name: 'cert-manage',
+    component: () => import('@/views/Manage.vue')
   }
 ]
 
