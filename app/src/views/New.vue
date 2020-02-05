@@ -1,7 +1,7 @@
 <template lang="pug">
   Layout
     .new
-      section.section
+      //- section.section
         .container
           .btn.deep-purple.darken-3 Back
 

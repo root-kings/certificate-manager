@@ -5,7 +5,7 @@
         .container
           
           h4.light Cert Title
-          router-link.btn.deep-purple.darken-3(to="/dashboard/new") Edit Cert
+          router-link.btn.deep-purple.darken-3(to="/dashboard/certificate/new") Edit Cert
 
       section.section
         .container
