@@ -28,14 +28,13 @@ server.use(bodyParser.json())
 server.use(express.static('public'))
 server.use(express.static('./app/dist'))
 
-server.set('view engine', 'pug')
 server.set('views', './views')
 
-server.use('/', require('./routes/user'))
+server.use('/', require('./routes'))
 
 module.exports = server
 
-app.listen(PORT, err => {
+server.listen(PORT, err => {
 	if (err) {
 		throw err
 	}
