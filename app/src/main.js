@@ -4,7 +4,8 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
-import 'materialize-css'
+// import 'materialize-css'
+import './assets/css/lib/MaterialIcons.css'
 import 'materialize-css/sass/materialize.scss'
 import './assets/css/lib/dayshmookh.layout.css'
 
