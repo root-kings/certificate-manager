@@ -24,9 +24,19 @@ const routes = [
     component: () => import('@/views/Login.vue')
   },
   {
+    path: '/register',
+    name: 'register',
+    component: () => import('@/views/Register.vue')
+  },
+  {
     path: '/certificate/:id',
     name: 'cert-view',
     component: () => import('@/views/View.vue')
+  },
+  {
+    path: '/certificates',
+    name: 'cert-list-view',
+    component: () => import('@/views/Search.vue')
   },
   {
     path: '/dashboard',
