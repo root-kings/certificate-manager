@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.4.3",
     "materialize-css": "^1.0.0-rc.2",
     "pug": "^2.0.4",
