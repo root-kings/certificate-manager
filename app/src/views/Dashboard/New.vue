@@ -79,6 +79,7 @@
 
 <script>
 // @ is an alias to /src
+import axios from 'axios'
 import Layout from '@/components/Layout.vue'
 
 export default {
@@ -88,6 +89,8 @@ export default {
   },
   data() {
     return {
+      templates: [],
+
       certificate: {
         event: {
           name: '',
@@ -95,6 +98,14 @@ export default {
           dat: ''
         }
       }
+    }
+  },
+  mounted() {},
+  methods: {
+    fetchTemplates() {
+      axios
+        .get(process.env.VUE_APP_API_ENDPOINT + '/certificate/templates')
+        .then(response => (this.templates = response.data))
     }
   }
 }
