@@ -21,12 +21,12 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: () => import('@/views/Login.vue')
+    component: () => import('@/views/Dashboard/Login.vue')
   },
   {
     path: '/register',
     name: 'register',
-    component: () => import('@/views/Register.vue')
+    component: () => import('@/views/Dashboard/Register.vue')
   },
   {
     path: '/certificate/:id',
@@ -41,17 +41,17 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: () => import('@/views/Dashboard.vue')
+    component: () => import('@/views/Dashboard/Index.vue')
   },
   {
     path: '/dashboard/certificate/new',
     name: 'cert-new',
-    component: () => import('@/views/New.vue')
+    component: () => import('@/views/Dashboard/New.vue')
   },
   {
     path: '/dashboard/certificate/:id',
     name: 'cert-manage',
-    component: () => import('@/views/Manage.vue')
+    component: () => import('@/views/Dashboard/Manage.vue')
   }
 ]
 

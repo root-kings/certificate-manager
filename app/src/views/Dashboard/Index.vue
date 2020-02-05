@@ -17,7 +17,7 @@ import Layout from '@/components/Layout.vue'
 import axios from 'axios'
 
 export default {
-  name: 'home',
+  name: 'dashboard',
   components: {
     Layout
   },

@@ -28,22 +28,22 @@
               .col.s3
                 .card
                   .card-image
-                    img(src="../assets/images/office.jpg")
+                    img(src="/images/office.jpg")
                     span.card-title Template
               .col.s3
                 .card.active
                   .card-image
-                    img(src="../assets/images/office.jpg")
+                    img(src="/images/office.jpg")
                     span.card-title Template
               .col.s3
                 .card
                   .card-image
-                    img(src="../assets/images/office.jpg")
+                    img(src="/images/office.jpg")
                     span.card-title Template
               .col.s3
                 .card
                   .card-image
-                    img(src="../assets/images/office.jpg")
+                    img(src="/images/office.jpg")
                     span.card-title Template
 
             .row
