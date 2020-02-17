@@ -45,6 +45,7 @@
       "family": "roboto"
     }
   },
+  "background": "background.png",
   "logos": [
     {
       "position": {

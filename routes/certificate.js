@@ -12,5 +12,6 @@ router.get('/about', (req, res) => {
 
 router.get('/dashboard', certificateController.certificates_dashboard_get)
 router.get('/templates', certificateController.certificates_templates_get)
+router.get('/details/:id', certificateController.certificates_details_get)
 
 module.exports = router

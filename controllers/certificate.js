@@ -1,7 +1,8 @@
 const certificates = [
   {
-    _id: 0,
+    _id: '0',
     title: 'Participation 00',
+    template: '1',
     type: 'participation',
     event: 'Event 00',
     date: new Date(),
@@ -30,22 +31,22 @@ const certificates = [
 
 const templates = [
   {
-    _id: 0,
+    _id: '0',
     title: 'Participation 00',
     type: 'participation',
-    image: 'path/to/img.png'
+    image: '/images/office.jpg'
   },
   {
-    _id: 1,
+    _id: '1',
     title: 'Participation 01',
     type: 'participation',
-    image: 'path/to/img.png'
+    image: '/images/office.jpg'
   },
   {
-    _id: 2,
+    _id: '2',
     title: 'Participation 02',
     type: 'participation',
-    image: 'path/to/img.png'
+    image: '/images/office.jpg'
   }
 ]
 
@@ -59,4 +60,8 @@ exports.certificates_dashboard_get = (req, res) => {
 
 exports.certificates_templates_get = (req, res) => {
   res.send(templates)
+}
+
+exports.certificates_details_get = (req, res) => {
+  res.send(certificates.filter(cert => cert._id == req.params.id)[0] || {})
 }
