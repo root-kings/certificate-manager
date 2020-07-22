@@ -5,40 +5,18 @@ const Schema = mongoose.Schema
 
 const TemplateSchema = new Schema(
   {
-    title: {
-      type: String,
-      required: true,
-      default: ''
-    },
-    template: {
+    config: {
       type: Schema.Types.ObjectId,
-      ref: 'Template'
-    },
-    type: {
-      type: String,
-      required: true,
-      default: ''
+      ref: 'TemplateConfig'
     },
     event: {
       type: String,
       required: true,
       default: ''
     },
-    date: { type: Date },
-    awardee: [
-      {
-        name: {
-          type: String,
-          required: true,
-          default: ''
-        },
-        email: {
-          type: String,
-          required: true,
-          default: ''
-        }
-      }
-    ],
+    date: {
+      type: Date
+    },
     organizer: {
       type: String,
       required: true,
@@ -46,7 +24,6 @@ const TemplateSchema = new Schema(
     },
     logos: [
       {
-        _id: 0,
         file: {
           type: String,
           required: true,
@@ -56,7 +33,6 @@ const TemplateSchema = new Schema(
     ],
     dignitories: [
       {
-        _id: 0,
         name: {
           type: String,
           required: true,

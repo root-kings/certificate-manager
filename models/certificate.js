@@ -20,11 +20,10 @@ const CertificateSchema = new Schema(
       default: ''
     },
     event: {
-      type: String,
-      required: true,
-      default: ''
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Event',
+      required: true
     },
-    date: { type: Date },
     awardee: [
       {
         name: {
@@ -39,36 +38,6 @@ const CertificateSchema = new Schema(
         }
       }
     ],
-    organizer: {
-      type: String,
-      required: true,
-      default: ''
-    },
-    logos: [
-      {
-        _id: 0,
-        file: {
-          type: String,
-          required: true,
-          default: ''
-        }
-      }
-    ],
-    dignitories: [
-      {
-        _id: 0,
-        name: {
-          type: String,
-          required: true,
-          default: ''
-        },
-        position: {
-          type: String,
-          required: true,
-          default: ''
-        }
-      }
-    ]
   },
   {
     toJSON: {
