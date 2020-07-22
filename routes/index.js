@@ -1,14 +1,20 @@
-let router = require("express").Router();
+let router = require('express').Router()
 
-router.get("/", (req, res) => {
-  res.send("Read API Docs.");
-});
+router.use('/api/user', require('./user'))
+router.use('/api/certificate', require('./certificate'))
 
-router.get("/api", (req, res) => {
-  res.send("Read API Docs.");
-});
+router.get('/api', (req, res) => {
+  res.send('Please read documentation for the API.')
+})
 
-router.use("/api/user", require("./user"));
-router.use("/api/certificate", require("./certificate"));
+router.get('/', (req, res) => {
+  res.redirect('/api')
+})
 
-module.exports = router;
+router.get('*', (req, res) => {
+  res.status(404).send({
+    error: 404
+  })
+})
+
+module.exports = router

@@ -11,9 +11,9 @@
   "author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "canvas": "^2.6.1",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.25",
@@ -22,7 +22,6 @@
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
   }
 }
