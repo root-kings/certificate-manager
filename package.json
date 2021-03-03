@@ -18,7 +18,7 @@
     "moment": "^2.27.0",
     "mongoose": "^5.9.25",
     "morgan": "^1.10.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "qrcode": "^1.4.4"
   },
   "devDependencies": {
